@@ -12,6 +12,10 @@ public class ChangePasswordDto  {
 	@JsonProperty("newPassword")	
 	private String newPassword;
 
+	public ChangePasswordDto(String pwd) {
+		this.newPassword = pwd;
+	}
+	public ChangePasswordDto() {}
 	
 	
 	public String getNewPassword() {
