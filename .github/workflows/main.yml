@@ -18,20 +18,16 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Checks-out your repository under sd sdasdasd asd$GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
       - uses: actions/setup-java@v3
         with:
           java-version: '8'
           distribution: 'adopt'
+          server-id: github
       
-      - run: mvn --batch-mode --update-snapshots verify
-      
-      - run: mkdir staging && cp target/*.jar staging
-      
-      - uses: actions/upload-artifact@v3
-        with:
-          name: Package
-          path: staging
-
+      - name: Publish package
+        run: mvn --batch-mode deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
