@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.com.tijo</groupId>
-	<artifactId>login-dto</artifactId>
+	<artifactId>api-login-dto</artifactId>
 	<version>1.0.3</version>
 	<packaging>jar</packaging>
-	<name>login-dto</name>
+	<name>api-login-dto</name>
 	<description></description>
 
 	<properties>
@@ -22,7 +22,7 @@
 	   <repository>
 	     <id>github</id>
 	     <name>GitHub OWNER Apache Maven Packages</name>
-	     <url>https://maven.pkg.github.com/cleber-ortiz/api-login-dto</url>
+	     <url>https://maven.pkg.github.com/br-engmanager/api-login-dto</url>
 	   </repository>
 	</distributionManagement>
 
@@ -44,8 +44,11 @@
 		</dependency>
 	</dependencies>
 
+
+
+
     <build>
-        <finalName>login-dto</finalName>
+        <finalName>api-login-dto</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
