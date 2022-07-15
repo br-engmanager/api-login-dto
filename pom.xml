@@ -5,7 +5,7 @@
 
 	<groupId>br.com.engmanager</groupId>
 	<artifactId>api-login-dto</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<packaging>jar</packaging>
 	<name>api-login-dto</name>
 	<description></description>

@@ -1,4 +1,4 @@
-package br.com.tijo.api.login.dto;
+package br.com.engmanager.api.login.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
